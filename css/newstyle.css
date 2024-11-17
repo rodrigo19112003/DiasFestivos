@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*Wildcard/Comodin, aplica a cualquier elemento o componente del documento HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*Estilo a etiqueta directa de HTML*/
+body{
+    width: 100%; /*Porcentaje de tamaño pantalla Ancho dinámico*/
+    height: 100vh; /*Viewport Height (vh) Llenar todo el alto*/
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image:url("../resources/fondo.jpg");
+}
+
+/*Estilo a etiqueta directa de HTML*/
+header {
+    text-align: center;
+    font-size: 20px;
+    background: #FFEFD8;
+    color: #000000;
+}
+
+/*Estilo a nivel de clase*/
+.contenido{
+    /* Formato del div contenido */
+    border: 1px solid #717377;
+    color: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #00000079;
+    box-shadow: 0px 3px 15px rgba(116, 1, 1, 0.9);
+}
+
+.labels {
+    font-size: 22px;
+}
+
+input,select {
+    width: 250px;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-weight: 0;
+    font-size: 14px;
+    padding: 10px 30px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    cursor: pointer;
+    background-color: #fff;
+    color: #ac3131;
+    border: solid 2px #FFEFD8;
+}
+
+input[type=submit]:hover{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-1px);
+    background-color: #108006;
+    color: #fff;
+    border: 2px solid #108006;
+}
+
+.resultados {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #717377;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #00000079;
+    color: #fff;
+    box-shadow: 0px 3px 15px rgba(5, 63, 0, 0.8);
+}
+
+.cards {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 24%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #10800686;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards .card p.second-text {
+    font-size: .7em;
+}
+
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #ac3131;
+}
+
+.cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+
+.sinresultados {
+    color: #ac3131;
+    font-weight: bold;
+}
